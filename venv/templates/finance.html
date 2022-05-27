@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <style>
+	  table, th, td {
+		  border:1px solid black
+	  }
+    body{
+      background-color: #1AA7EC;
+      color: white;
+      text-align: center;
+    }
+    a.button {
+  background-color: #187BCD;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    a.button:hover{
+      background-color: #02198B;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    }
+  </style>
+  <head>
+   <div class = "button">
+      <a href="/index" class ="button" > Home</a>
+      <a href="/aboutus" class ="button"> About Us </a>
+    </div>
+  </head>
+  <body>
+	  <h1>Finances</h1>
+    <div class="container">
+        <div id="data">
+		  <input type="number" id="amt" placeholder="Enter Amount">
+		  <input type="text" id="pay" placeholder="Enter Payable To">
+		  <input type="text" id="purpose" placeholder="Enter Purpose">
+		  <input type="date" id="date" placeholder="Enter Date">
+		  <input type="number" id="bal" placeholder="Enter Balance">
+		  <input type="text" id="notes" placeholder="Enter Notes">
+		  <button>Add Information</button>
+        </div>
+	  <table id="table">
+		  <tr>
+			  <th></th>
+			  <th><b>Payable To</b></th>
+			  <th><b>Purpose</b></th>
+			  <th><b>Date</b></th>
+			  <th><b>Balance</b></th>
+			  <th><b>Processed Date / Notes</b></th>
+		  </tr>
+
+	  </table>
+    </div>
+    <script src="static/script.js"></script>
+
+</body>
+</html>
