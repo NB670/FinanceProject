@@ -24,5 +24,10 @@ def home_page():
     return render_template("index.html")
 
 
+@app.route('/manual')
+def manual():
+    return render_template("manual.html")
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=random.randint(2000, 9000))
