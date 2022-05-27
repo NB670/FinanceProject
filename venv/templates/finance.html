@@ -32,10 +32,27 @@
    <div class = "button">
       <a href="/index" class ="button" > Home</a>
       <a href="/aboutus" class ="button"> About Us </a>
+      <a href="/manual" class ="button" > How To Use</a>
     </div>
   </head>
   <body>
-	  <h1>Finances</h1>
+	  <h1 font-family:"verdana">Finances</h1>
+
+	  <label for="genders"><b>Choose a gender:</b></label>
+	  <select name="genders" id="gender">
+	    <option value="men">Men</option>
+	    <option value="women">Women</option>
+	  </select>
+
+
+	  <label for="sports"><b>Choose a sport:</b></label>
+	  <select name="sports" id="sport">
+	    <option value="soccer">Soccer</option>
+	    <option value="tennis">Tennis</option>
+	    <option value="basketball">Basketball</option>
+	  </select>
+
+
     <div class="container">
         <div id="data">
 		  <input type="number" id="amt" placeholder="Enter Amount">
@@ -44,11 +61,11 @@
 		  <input type="date" id="date" placeholder="Enter Date">
 		  <input type="number" id="bal" placeholder="Enter Balance">
 		  <input type="text" id="notes" placeholder="Enter Notes">
-		  <button>Add Information</button>
+		  <button onclick="alert()">Add Information</button>
         </div>
 	  <table id="table">
 		  <tr>
-			  <th></th>
+			  <th><b>Amount</b></th>
 			  <th><b>Payable To</b></th>
 			  <th><b>Purpose</b></th>
 			  <th><b>Date</b></th>
